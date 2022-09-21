@@ -21,11 +21,12 @@ class _GendersToggleScreenState extends State<GendersToggleScreen> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         leading: InkWell(
-            onTap: () {
-              Get.back();
-              Get.delete<GendersToggleController>();
-            },
-            child: const Icon(Icons.arrow_back_ios_new_outlined)),
+          onTap: () {
+            Get.back();
+            Get.delete<GendersToggleController>();
+          },
+          child: const Icon(Icons.arrow_back_ios_new_outlined),
+        ),
         title: const Padding(
           padding: EdgeInsets.only(left: 20.0),
           child: Text(
