@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 class FormController extends GetxController {
   final GlobalKey<FormState> loginFormKey = GlobalKey<FormState>();
 
+  bool loginStatus = false;
+
   late TextEditingController emailController;
   late TextEditingController passwordController;
 
@@ -22,6 +24,7 @@ class FormController extends GetxController {
     super.onClose();
     emailController.dispose();
     passwordController.dispose();
+    loginStatus = false;
   }
 
   String? emailValidate(String value) {
@@ -43,9 +46,11 @@ class FormController extends GetxController {
   void checkLogin() {
     final isValid = loginFormKey.currentState!.validate();
     if (!isValid) {
+      loginStatus = false;
       return;
     } else {
       loginFormKey.currentState!.save();
+      loginStatus = true;
     }
   }
 }

@@ -30,6 +30,21 @@ class _HomeScreenState extends State<HomeScreen> {
                 //Buttons for Screens
                 TextButton(
                   onPressed: () {
+                    Get.toNamed(counter);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(12),
+                    height: 50,
+                    width: 250,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                      color: Colors.black,
+                    ),
+                    child: const Center(child: Text('Counter Screen')),
+                  ),
+                ),
+                TextButton(
+                  onPressed: () {
                     Get.toNamed(gendersToggle);
                   },
                   child: Container(
@@ -44,9 +59,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
 
-                const SizedBox(
-                  height: 20,
-                ),
                 TextButton(
                   onPressed: () {
                     Get.toNamed(form);
@@ -63,28 +75,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
 
-                const SizedBox(
-                  height: 20,
-                ),
-                TextButton(
-                  onPressed: () {
-                    Get.toNamed(counter);
-                  },
-                  child: Container(
-                    padding: const EdgeInsets.all(12),
-                    height: 50,
-                    width: 250,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: Colors.black,
-                    ),
-                    child: const Center(child: Text('Counter Screen')),
-                  ),
-                ),
-
-                const SizedBox(
-                  height: 20,
-                ),
                 TextButton(
                   onPressed: () {
                     Get.toNamed(checkbox);

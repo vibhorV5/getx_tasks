@@ -38,37 +38,36 @@ class _CheckboxScreenState extends State<CheckboxScreen> {
                 child: Column(
                   children: [
                     //Checkboxes will go here
-
                     CheckboxListTile(
-                      title: Text('Item 1'),
+                      title: const Text('Item 1'),
                       value: Get.find<CheckboxController>().item1.value,
                       onChanged: (value) {
                         Get.find<CheckboxController>().item1.value = value!;
                       },
                     ),
                     CheckboxListTile(
-                      title: Text('Item 2'),
+                      title: const Text('Item 2'),
                       value: Get.find<CheckboxController>().item2.value,
                       onChanged: (value) {
                         Get.find<CheckboxController>().item2.value = value!;
                       },
                     ),
                     CheckboxListTile(
-                      title: Text('Item 3'),
+                      title: const Text('Item 3'),
                       value: Get.find<CheckboxController>().item3.value,
                       onChanged: (value) {
                         Get.find<CheckboxController>().item3.value = value!;
                       },
                     ),
                     CheckboxListTile(
-                      title: Text('Item 4'),
+                      title: const Text('Item 4'),
                       value: Get.find<CheckboxController>().item4.value,
                       onChanged: (value) {
                         Get.find<CheckboxController>().item4.value = value!;
                       },
                     ),
                     CheckboxListTile(
-                      title: Text('Item 5'),
+                      title: const Text('Item 5'),
                       value: Get.find<CheckboxController>().item5.value,
                       onChanged: (value) {
                         Get.find<CheckboxController>().item5.value = value!;

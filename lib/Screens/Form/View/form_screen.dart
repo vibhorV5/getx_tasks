@@ -151,6 +151,23 @@ class FormScreen extends GetView<FormController> {
                     child: TextButton(
                       onPressed: () {
                         controller.checkLogin();
+                        controller.loginStatus == true
+                            ? Get.snackbar(
+                                'Welcome',
+                                'Login Successfull',
+                                icon:
+                                    const Icon(Icons.info, color: Colors.white),
+                                snackPosition: SnackPosition.BOTTOM,
+                                backgroundColor: Colors.green.withOpacity(0.5),
+                              )
+                            : Get.snackbar(
+                                'Failure',
+                                'Login Failed',
+                                icon:
+                                    const Icon(Icons.info, color: Colors.white),
+                                snackPosition: SnackPosition.BOTTOM,
+                                backgroundColor: Colors.red.withOpacity(0.5),
+                              );
                       },
                       child: Container(
                         decoration: BoxDecoration(
