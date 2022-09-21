@@ -67,8 +67,8 @@ class _GendersToggleScreenState extends State<GendersToggleScreen> {
                               decoration: BoxDecoration(
                                   color: Colors.blue[900],
                                   borderRadius: BorderRadius.circular(10)),
-                              padding: EdgeInsets.only(left: 15),
-                              margin: EdgeInsets.only(right: 200),
+                              padding: const EdgeInsets.only(left: 15),
+                              margin: const EdgeInsets.only(right: 200),
                               width: 50,
                               height: 30,
                               child: Row(
@@ -78,10 +78,10 @@ class _GendersToggleScreenState extends State<GendersToggleScreen> {
                                     style: kTextStyle1.copyWith(
                                         fontSize: 13, color: Colors.white),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 5,
                                   ),
-                                  Icon(
+                                  const Icon(
                                     Icons.male,
                                     color: Colors.white,
                                     size: 20,
@@ -94,8 +94,8 @@ class _GendersToggleScreenState extends State<GendersToggleScreen> {
                                   border: Border.all(color: Colors.grey),
                                   // color: Colors.blue[900],
                                   borderRadius: BorderRadius.circular(10)),
-                              padding: EdgeInsets.only(left: 15),
-                              margin: EdgeInsets.only(right: 200),
+                              padding: const EdgeInsets.only(left: 15),
+                              margin: const EdgeInsets.only(right: 200),
                               width: 50,
                               height: 30,
                               child: Row(
@@ -105,10 +105,10 @@ class _GendersToggleScreenState extends State<GendersToggleScreen> {
                                     style: kTextStyle1.copyWith(
                                         fontSize: 13, color: Colors.black),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 5,
                                   ),
-                                  Icon(
+                                  const Icon(
                                     Icons.male,
                                     color: Colors.black,
                                     size: 20,
@@ -129,8 +129,8 @@ class _GendersToggleScreenState extends State<GendersToggleScreen> {
                                   decoration: BoxDecoration(
                                       color: Colors.pink,
                                       borderRadius: BorderRadius.circular(10)),
-                                  padding: EdgeInsets.only(left: 15),
-                                  margin: EdgeInsets.only(right: 200),
+                                  padding: const EdgeInsets.only(left: 15),
+                                  margin: const EdgeInsets.only(right: 200),
                                   width: 50,
                                   height: 30,
                                   child: Row(
@@ -140,10 +140,10 @@ class _GendersToggleScreenState extends State<GendersToggleScreen> {
                                         style: kTextStyle1.copyWith(
                                             fontSize: 13, color: Colors.white),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 5,
                                       ),
-                                      Icon(
+                                      const Icon(
                                         Icons.female,
                                         color: Colors.white,
                                         size: 20,
@@ -156,8 +156,8 @@ class _GendersToggleScreenState extends State<GendersToggleScreen> {
                                       border: Border.all(color: Colors.grey),
                                       // color: Colors.blue[900],
                                       borderRadius: BorderRadius.circular(10)),
-                                  padding: EdgeInsets.only(left: 15),
-                                  margin: EdgeInsets.only(right: 200),
+                                  padding: const EdgeInsets.only(left: 15),
+                                  margin: const EdgeInsets.only(right: 200),
                                   width: 50,
                                   height: 30,
                                   child: Row(
@@ -167,10 +167,10 @@ class _GendersToggleScreenState extends State<GendersToggleScreen> {
                                         style: kTextStyle1.copyWith(
                                             fontSize: 13, color: Colors.black),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 5,
                                       ),
-                                      Icon(
+                                      const Icon(
                                         Icons.female,
                                         color: Colors.black,
                                         size: 20,

@@ -17,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          title: Center(child: Text('Home Screen')),
+          title: const Center(child: Text('Home Screen')),
         ),
         body: SingleChildScrollView(
           child: Container(
@@ -39,11 +39,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       borderRadius: BorderRadius.circular(30),
                       color: Colors.black,
                     ),
-                    child: Center(child: Text('Genders Toggle Screen')),
+                    child: const Center(child: Text('Genders Toggle Screen')),
                   ),
                 ),
 
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextButton(
@@ -57,11 +57,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       borderRadius: BorderRadius.circular(30),
                       color: Colors.black,
                     ),
-                    child: Center(child: Text('Form Screen')),
+                    child: const Center(child: Text('Form Screen')),
                   ),
                 ),
 
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextButton(
@@ -75,24 +75,24 @@ class _HomeScreenState extends State<HomeScreen> {
                       borderRadius: BorderRadius.circular(30),
                       color: Colors.black,
                     ),
-                    child: Center(child: Text('Counter Screen')),
+                    child: const Center(child: Text('Counter Screen')),
                   ),
                 ),
 
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextButton(
                   onPressed: () {},
                   child: Container(
-                    padding: EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(10),
                     height: 50,
                     width: 200,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                       color: Colors.black,
                     ),
-                    child: Center(
+                    child: const Center(
                         child: FittedBox(
                             child: Text(
                                 'Bindings Screen (Checkbox or dropdown)'))),

@@ -37,7 +37,7 @@ class FormScreen extends GetView<FormController> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    margin: EdgeInsets.only(bottom: 30),
+                    margin: const EdgeInsets.only(bottom: 30),
                     child: Text(
                       'Please enter your login details',
                       style: kTextStyle1.copyWith(
@@ -46,108 +46,101 @@ class FormScreen extends GetView<FormController> {
                   ),
 
                   //Form Fields
-
-                  Container(
-                    // height: 50,
-                    child: TextFormField(
-                      onSaved: (newValue) {
-                        controller.email = newValue!;
-                      },
-                      validator: (value) {
-                        return controller.emailValidate(value!);
-                      },
-                      controller: controller.emailController,
-                      keyboardType: TextInputType.emailAddress,
-                      decoration: InputDecoration(
-                        contentPadding: EdgeInsets.symmetric(
-                            vertical: 10.0, horizontal: 10.0),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(25.0),
-                          borderSide: BorderSide(
-                            color: Colors.black,
-                            // width: 2.0,
-                          ),
+                  TextFormField(
+                    onSaved: (newValue) {
+                      controller.email = newValue!;
+                    },
+                    validator: (value) {
+                      return controller.emailValidate(value!);
+                    },
+                    controller: controller.emailController,
+                    keyboardType: TextInputType.emailAddress,
+                    decoration: InputDecoration(
+                      contentPadding: const EdgeInsets.symmetric(
+                          vertical: 10.0, horizontal: 10.0),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(25.0),
+                        borderSide: const BorderSide(
+                          color: Colors.black,
+                          // width: 2.0,
                         ),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(25.0),
-                          borderSide: BorderSide(
-                            color: Colors.black,
-                            // width: 2.0,
-                          ),
+                      ),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(25.0),
+                        borderSide: const BorderSide(
+                          color: Colors.black,
+                          // width: 2.0,
                         ),
-                        errorBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(25.0),
-                          borderSide: BorderSide(
-                            color: Colors.red,
-                            // width: 2.0,
-                          ),
+                      ),
+                      errorBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(25.0),
+                        borderSide: const BorderSide(
+                          color: Colors.red,
+                          // width: 2.0,
                         ),
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(25.0),
-                          borderSide: BorderSide(
-                            color: Colors.grey,
-                            // width: 2.0,
-                          ),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(25.0),
+                        borderSide: const BorderSide(
+                          color: Colors.grey,
+                          // width: 2.0,
                         ),
-                        labelText: 'Email',
-                        labelStyle: kTextStyle1.copyWith(
-                          fontSize: 13,
-                          color: Colors.black.withOpacity(0.3),
-                        ),
+                      ),
+                      labelText: 'Email',
+                      labelStyle: kTextStyle1.copyWith(
+                        fontSize: 13,
+                        color: Colors.black.withOpacity(0.3),
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
-                  Container(
-                    // height: 50,
-                    child: TextFormField(
-                      onSaved: (newValue) {
-                        controller.password = newValue!;
-                      },
-                      validator: (value) {
-                        return controller.passwordValidate(value!);
-                      },
-                      controller: controller.passwordController,
-                      keyboardType: TextInputType.visiblePassword,
-                      obscureText: true,
-                      decoration: InputDecoration(
-                        contentPadding: EdgeInsets.symmetric(
-                            vertical: 10.0, horizontal: 10.0),
-                        errorBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(25.0),
-                          borderSide: BorderSide(
-                            color: Colors.red,
-                            // width: 2.0,
-                          ),
+                  TextFormField(
+                    onSaved: (newValue) {
+                      controller.password = newValue!;
+                    },
+                    validator: (value) {
+                      return controller.passwordValidate(value!);
+                    },
+                    controller: controller.passwordController,
+                    keyboardType: TextInputType.visiblePassword,
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      contentPadding: const EdgeInsets.symmetric(
+                          vertical: 10.0, horizontal: 10.0),
+                      errorBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(25.0),
+                        borderSide: const BorderSide(
+                          color: Colors.red,
+                          // width: 2.0,
                         ),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(25.0),
-                          borderSide: BorderSide(
-                            color: Colors.black,
-                            // width: 2.0,
-                          ),
+                      ),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(25.0),
+                        borderSide: const BorderSide(
+                          color: Colors.black,
+                          // width: 2.0,
                         ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(25.0),
-                          borderSide: BorderSide(
-                            color: Colors.black,
-                            // width: 2.0,
-                          ),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(25.0),
+                        borderSide: const BorderSide(
+                          color: Colors.black,
+                          // width: 2.0,
                         ),
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(25.0),
-                          borderSide: BorderSide(
-                            color: Colors.grey,
-                            // width: 2.0,
-                          ),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(25.0),
+                        borderSide: const BorderSide(
+                          color: Colors.grey,
+                          // width: 2.0,
                         ),
-                        labelText: 'Password',
-                        labelStyle: kTextStyle1.copyWith(
-                          fontSize: 13,
-                          color: Colors.black.withOpacity(0.3),
-                        ),
+                      ),
+                      labelText: 'Password',
+                      labelStyle: kTextStyle1.copyWith(
+                        fontSize: 13,
+                        color: Colors.black.withOpacity(0.3),
                       ),
                     ),
                   ),
@@ -164,8 +157,8 @@ class FormScreen extends GetView<FormController> {
                           color: Colors.black,
                           borderRadius: BorderRadius.circular(15),
                         ),
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 40, vertical: 8),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 40, vertical: 8),
                         child: Text(
                           'Login',
                           style: kTextStyle1.copyWith(
@@ -173,7 +166,7 @@ class FormScreen extends GetView<FormController> {
                         ),
                       ),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
