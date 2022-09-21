@@ -29,12 +29,13 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 //Buttons for Screens
                 TextButton(
-                  onPressed: () async {
-                    await Get.toNamed(gendersToggle);
+                  onPressed: () {
+                    Get.toNamed(gendersToggle);
                   },
                   child: Container(
+                    padding: const EdgeInsets.all(12),
                     height: 50,
-                    width: 200,
+                    width: 250,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                       color: Colors.black,
@@ -47,12 +48,13 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 20,
                 ),
                 TextButton(
-                  onPressed: () async {
-                    await Get.toNamed(form);
+                  onPressed: () {
+                    Get.toNamed(form);
                   },
                   child: Container(
+                    padding: const EdgeInsets.all(12),
                     height: 50,
-                    width: 200,
+                    width: 250,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                       color: Colors.black,
@@ -65,12 +67,13 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 20,
                 ),
                 TextButton(
-                  onPressed: () async {
-                    await Get.toNamed(counter);
+                  onPressed: () {
+                    Get.toNamed(counter);
                   },
                   child: Container(
+                    padding: const EdgeInsets.all(12),
                     height: 50,
-                    width: 200,
+                    width: 250,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                       color: Colors.black,
@@ -83,19 +86,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 20,
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.toNamed(checkbox);
+                  },
                   child: Container(
-                    padding: const EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(12),
                     height: 50,
-                    width: 200,
+                    width: 250,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                       color: Colors.black,
                     ),
                     child: const Center(
                         child: FittedBox(
-                            child: Text(
-                                'Bindings Screen (Checkbox or dropdown)'))),
+                            child: Text('Checkbox Screen(via Bindings)'))),
                   ),
                 ),
               ],
