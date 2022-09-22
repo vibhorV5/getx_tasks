@@ -92,6 +92,22 @@ class _HomeScreenState extends State<HomeScreen> {
                             child: Text('Checkbox Screen(via Bindings)'))),
                   ),
                 ),
+
+                TextButton(
+                  onPressed: () {
+                    Get.toNamed(dropdown);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(12),
+                    height: 50,
+                    width: 250,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                      color: Colors.black,
+                    ),
+                    child: const Center(child: Text('Dropdown Screen')),
+                  ),
+                ),
               ],
             ),
           ),
