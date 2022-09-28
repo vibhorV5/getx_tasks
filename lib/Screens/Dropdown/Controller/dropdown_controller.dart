@@ -1,15 +1,19 @@
 import 'package:get/get.dart';
 
 class DropdownController extends GetxController {
-  final selected = 'item1'.obs;
+  RxString selected = "".obs;
 
-  final listItems = [
-    'item1',
-    'item2',
-    'item3',
-    'item4',
-    'item5',
-    'item6',
+  final listType = [
+    'Item1',
+    'Item2',
+    'Item3',
+    'Item4',
+    'Item5',
+    'Item6',
+    'Item7',
+    'Item8',
+    'Item9',
+    'Item10',
   ];
 
   void setSelected(String value) {
